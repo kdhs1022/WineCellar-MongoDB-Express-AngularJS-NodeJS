@@ -45,7 +45,11 @@ The application allows you to browse through a list of wines, as well as add, up
     node app.js
     ```
 
+***
+
 ## Start :
+
+* Run
 
 	```
     http://localhost:3000
