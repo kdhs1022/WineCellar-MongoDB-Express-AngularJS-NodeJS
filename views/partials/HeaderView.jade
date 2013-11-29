@@ -1,0 +1,40 @@
+.navbar.navbar-inverse.navbar-fixed-top
+  .navbar-inner
+    .container
+      a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.brand(href='/') Node Cellar
+      .nav-collapse.collapse
+        ul.nav
+          li.add-menu
+            a(href='/wines') Browse Wines
+          li.add-menu
+            a(href='/addWine')
+              i.icon-edit.icon-white
+              | Add Wine
+        ul.nav.pull-right
+          li.about-menu
+            a(href='/about') About
+          li.dropdown
+            a.dropdown-toggle(href='#', data-toggle='dropdown')
+              | Resources
+              b.caret
+            ul.dropdown-menu
+              li
+                a(href='http://angularjs.org', target='_blank') Angular.js
+              li
+                a(href='http://twitter.github.com/bootstrap/', target='_blank') Twitter Bootstrap
+              li
+                a(href='http://nodejs.org/', target='_blank') Node.js
+                li
+                  a(href='http://expressjs.com/mongodb', target='_blank') Express
+                  li
+                    a(href='http://www.mongodb.org/', target='_blank') MongoDB
+                  li.divider
+                  li.nav-header This App
+                  li
+                    a(href='#', target='_blank') GitHub Repository
+                  //- li
+                  //-   a(href='http://coenraets.org', target='_blank') Author's Blog

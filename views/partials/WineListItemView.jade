@@ -1,0 +1,11 @@
+div(ng-repeat='wine in wines', style='float:left;')
+	ul.thumbnails
+		li
+			a.thumbnail.plain(href='/wines/{{wine._id}}', style='text-align: center;')
+				div(style='height:150px')
+					img(src='pics/{{wine.picture}}', height='150', width='125', alt='')
+				h5 {{wine.name}}
+				{{wine.year}} {{wine.grapes}}
+				br
+				i.icon-globe
+				{{wine.region}} {{wine.country}}
