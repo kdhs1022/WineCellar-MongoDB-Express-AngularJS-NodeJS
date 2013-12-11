@@ -1,8 +1,5 @@
-<<<<<<< HEAD
+
 # NodeCellar Sample Application with MongoDB, Express, Angular.js and Node.js #
-=======
-# NodeCellar_MEAN Sample Application with MongoDB, Express, Angular.js and Node.js #
->>>>>>> 2f3812023c1f45cfa0ac1a4a8e7a80c2d5a1b128
 
 "Node Cellar" is a sample CRUD application built with with MongoDB, Express, Angular.js and Node.js.
 
@@ -10,11 +7,7 @@ The application allows you to browse through a list of wines, as well as add, up
 
 ***
 
-<<<<<<< HEAD
 ##NodeCellar is built on top of the following libraries :
-=======
-##NodeCellar_MEAN is built on top of the following libraries :
->>>>>>> 2f3812023c1f45cfa0ac1a4a8e7a80c2d5a1b128
 
 * [MongoDb](http://www.mongodb.org/) - Database Storage
 * [Express.js](http://expressjs.com/) - Node.js Web Framework
