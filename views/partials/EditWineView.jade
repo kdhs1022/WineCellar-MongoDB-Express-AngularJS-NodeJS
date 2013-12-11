@@ -1,0 +1,48 @@
+form.form-horizontal.span12(action='/api/wines/{{form._id}}', ng-upload)
+  legend Wine Details
+  br
+  .row
+    .span8
+      .control-group
+        label.control-label(for='wineId') Id:
+        .controls
+          input#wineId(type='text', name='id', ng-model='form._id' disabled)
+      .control-group
+        label.control-label(for='name') Name:
+        .controls
+          input#name(type='text', name='name', ng-model='form.name')
+      .control-group
+        label.control-label(for='grapes') Grapes:
+        .controls
+          input#grapes(type='text', name='grapes', ng-model='form.grapes')
+      .control-group
+        label.control-label(for='country') Country:
+        .controls
+          input#country(type='text', name='country', ng-model='form.country')
+      .control-group
+        label.control-label(for='region') Region:
+        .controls
+          input#region(type='text', name='region', ng-model='form.region')
+      .control-group
+        label.control-label(for='year') Year:
+        .controls
+          select#year.input-small(name='year', ng-model='form.year', ng-options="y for y in years")
+            option(value="") -- choose year --
+      .control-group
+        label.control-label(for='description') Notes:
+        .controls
+          textarea#description(name='description', style='width: 90%;', rows='6', ng-model='form.description')
+    .span4
+      .well(style='width: 50%; text-align: center; margin: 0px auto;')
+        p
+          img#pictureView(width='180', src='/pics/{{form.picture}}')
+        p
+          input#picture(type='file', name='picture', ng-model='form.picture')
+  .form-actions
+    input.btn.btn-primary(type='submit', value='Save')
+    input.btn.btn-danger(type='button', ng-click='deleteWine()', value='Delete')
+.row-fluid.status-bar
+.span12
+  .alert.alert-success(style='display: none;')
+    b Success!
+    | Wine saved successfully

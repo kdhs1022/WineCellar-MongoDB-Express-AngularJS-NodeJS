@@ -1,0 +1,10 @@
+{
+    "name": "WineCellar-MongoDB-Express-AngularJS-NodeJS"
+  , "version": "0.0.1"
+  , "private": true
+  , "dependencies": {
+      "express": "3.4.5"
+    , "jade": "0.35.0"
+    , "mongodb": "1.3.19"
+  }
+}
