@@ -1,5 +1,5 @@
 {
-    "name": "WineCellar_MEAN"
+    "name": "WineCellar-MongoDB-Express-AngularJS-NodeJS"
   , "version": "0.0.1"
   , "private": true
   , "dependencies": {
